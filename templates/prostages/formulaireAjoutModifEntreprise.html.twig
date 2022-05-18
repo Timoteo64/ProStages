@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+{% if action == 'ajouter' %}
+Ajout entreprise
+{% else %}
+Modification entreprise
+{% endif %}
+{% endblock %}
+
+{% block contenu %}
+{{ form_start (vueFormulaireEntreprise) }}
+    <div>
+        {{ form_row (vueFormulaireEntreprise.nom, {'label' : 'Nom de l\'entreprise'}) }}
+    </div>
+    <div>
+        {{ form_row (vueFormulaireEntreprise.adresse, {'label' : 'Adresse'}) }}
+    </div>
+    <div>
+        {{ form_row (vueFormulaireEntreprise.activite, {'label' : 'Activité'}) }}
+    </div>
+    <div>
+        {{ form_row (vueFormulaireEntreprise.URLsite, {'label' : 'URL du site web'}) }}
+    </div>
+ <button class="btn" type="submit">
+ Envoyer
+ </button>
+{{ form_end (vueFormulaireEntreprise) }}
+{% endblock %}

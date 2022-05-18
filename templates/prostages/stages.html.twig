@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Stages
+{% endblock %}
+
+{% block contenu %}
+    <h3 class="titreSection">Stages</h3>
+   {% if is_granted('ROLE_USER') %}
+    <a class="ajout_stage" href="{{path('prostages_ajouterStage')}}" >Ajouter un stage</a><br></br>
+    {% endif %}
+
+    {% for stageCourant in stages %}
+    <a class="carteStage" href="{{path('prostages_stageDetails',{id:stageCourant.id})}}">
+        <div class="idStage">{{stageCourant.id}}</div>
+        <div class="titreStage"><h5>{{stageCourant.titre}}</h5></div>
+        <div class="entrepriseStage">Proposé par : {{stageCourant.entreprises.nom}}</div>
+        <div class="formationStage">
+        {% for formationCourante in stageCourant.formations() %}
+            {{formationCourante.nomCourt}}&nbsp;&nbsp;&nbsp;<!--Les "&nbsp;" servent juste à ajouter des espaces à la fin pour séparer les formations-->
+        {% endfor %}
+        </div>
+    </a>
+    {% endfor %}
+
+    {% endblock %}
+

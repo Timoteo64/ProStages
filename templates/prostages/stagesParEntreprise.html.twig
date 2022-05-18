@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Stages par entreprise
+{% endblock %}
+
+{% block contenu %}
+    <h3 class="titreSection">Stages proposés par l'entreprise {{entreprise.nom}}</h3>
+
+
+    {% for stageCourant in entreprise.stages %}
+    <a class="carteStage" href="{{path('prostages_stageDetails',{id:stageCourant.id})}}">
+        <div class="idStage">{{stageCourant.id}}</div>
+        <div class="titreStage"><h5>{{stageCourant.titre}}</h5></div>
+        <div class="formationStage">
+        {% for formationCourante in stageCourant.getFormations() %}
+            {{formationCourante.nomCourt}}&nbsp;&nbsp;&nbsp;<!--Les "&nbsp;" servent juste à ajouter des espaces à la fin pour séparer les formations-->
+        {% endfor %}
+        </div>
+    </a>
+    {% endfor %}
+
+{% endblock %}

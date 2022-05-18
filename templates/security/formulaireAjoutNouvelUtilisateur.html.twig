@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Sign up
+{% endblock %}
+
+{% block contenu %}
+{{ form_start (vueFormulaireNouvelUtilisateur, {'attr':{'novalidate':'novalidate'}}) }}
+    <div>
+        {{ form_row (vueFormulaireNouvelUtilisateur.nom)}}
+    </div>
+    <div>
+        {{ form_row (vueFormulaireNouvelUtilisateur.username, {'label' : 'Nom d\'utilisateur'}) }}
+    </div>
+    <div>
+        {{ form_row (vueFormulaireNouvelUtilisateur.password) }}
+    </div>
+    <button class="btn" type="submit">
+    S'inscrire
+    </button>
+{{ form_end (vueFormulaireNouvelUtilisateur) }}
+<a href="{{ path('app_login') }}">Retour</a>
+{% endblock %}

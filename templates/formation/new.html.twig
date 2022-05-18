@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une formation{% endblock %}
+
+{% block contenu %}
+    <h1>Créer une nouvelle formation</h1>
+
+    {{ include('formation/_form.html.twig') }}
+
+    <a lass="btn btn-dark" href="{{ path('prostages_formations') }}">Retour</a>
+{% endblock %}

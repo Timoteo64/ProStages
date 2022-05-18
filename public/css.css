@@ -1,0 +1,261 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/*MENU*/
+.menu {
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 2%;
+}
+
+.titrePrincipal {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    color: rgb(255, 0, 0);
+}
+
+/*MENU NAV*/
+.nav {
+    font-size: 150%;
+    float: left;
+}
+
+.nav-link {
+    color:rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 10, 10);
+}
+
+.current-user-username {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 0.1% 0.4% 0.1% 0.4%;
+    margin: 0.4% 1% 0.4% 0.4%;
+    float: right;
+    border: rgb(255, 0, 0) 1px solid;
+    color: rgb(255, 255, 255);
+}
+
+.connect-disconnect-navlink {
+    border: rgb(255, 0, 0) 1px solid;
+    border-radius: 10px;
+    padding: 0.5%;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    float: right;
+    transition: 0.2s;
+}
+
+.connect-disconnect-navlink:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(240, 236, 236);
+}
+
+/*PAGE STAGE*/
+.sectionContenu {
+    padding: 0% 2% 0% 2%;
+}
+.ajout_stage {
+    border: rgb(255, 0, 0) 1px solid;
+    border-radius: 10px;
+    padding: 0.5%;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: 0.2s;
+}
+.ajout_stage:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(240, 236, 236);
+}
+
+.titreSection {
+    padding: 0.5% 0% 0.5% 0%;
+    margin-bottom: 1.5%;
+    font-size: 200%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.carteStage {
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 15px;
+
+    transition: 0.1s;
+}
+
+.carteStage:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.idStage {
+    font-size: 20px;
+    padding: 0.5%;
+    width: 3%;
+    text-align: center;
+    border-right: 1px solid black;    
+}
+
+.titreStage {
+    padding: 0.5%;
+    width: 57%;
+}
+
+.entrepriseStage, .formationStage {
+    color:rgb(255, 255, 255);
+    padding: 0.5%;
+    width: 20%;
+    border-left: 2px solid black;
+}
+
+/*PAGE ENTREPRISES*/
+.carteEntreprise {
+    background-color: rgb(0, 0, 0);
+    padding: 5%;
+    margin-bottom: 5%;
+
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.nomEntreprise {
+    color:rgb(255, 255, 255);
+    font-size: 150%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.activiteEntreprise {
+    color:rgb(255, 255, 255);
+    font-size: 100%;
+    font-style: italic;
+    text-align: center;
+}
+
+.adresseEntreprise {
+    color:rgb(255, 255, 255);
+    font-size: 75%;
+}
+
+.boutonCarteEntreprise {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    padding: 2%;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.boutonCarteEntreprise:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/*PAGE FORMATIONS*/
+.carteFormation {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5%;
+
+    border: 1px black solid;
+}
+
+.titreCarteFormation {
+    color:rgb(255, 255, 255);
+    font-size: 150%;
+    text-align: center;
+    border: 1px black solid;
+    margin: 0%;
+}
+
+.titreTexteCarteFormation {
+    color:rgb(255, 255, 255);
+    font-size: 100%;
+    text-decoration: underline;
+    margin: 2% 0% 2% 0%;
+}
+
+.texteCarteFormation {
+    color:rgb(255, 255, 255);
+    text-align: justify;
+    padding: 0% 3% 0% 3%;
+}
+
+.boutonCarteFormation {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    padding: 2%;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.boutonCarteFormation:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.btn {
+    display: flex;
+    margin: 1%;
+    color: white;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: #000000;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+/*PAGE STAGE DÉTAILLÉ*/
+
+.cadreStageDétaillé {
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 3%;
+}
+
+.annotation {
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.descriptionMission {
+    color:rgb(255, 255, 255);
+    font-style: italic;
+}
+
+/*connexion*/
+.connecter {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+    padding: 2%;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+/*FOOTER*/
+
+.footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    padding: 2% 4% 0% 4%;
+    margin-top: 2%;
+}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Stages par formation
+{% endblock %}
+
+{% block contenu %}
+    <h3 class="titreSection">Stages proposés pour la formation {{formation.nomCourt}}</h3>
+
+    <!--CARTES STAGES-->
+    {% for stageCourant in formation.stages %}
+    <a class="carteStage" href="{{path('prostages_stageDetails',{id:stageCourant.id})}}">
+        <div class="idStage">{{stageCourant.id}}</div>
+        <div class="titreStage"><h5>{{stageCourant.titre}}</h5></div>
+        <div class="entrepriseStage">{{stageCourant.getEntreprises().nom}}</div>
+    </a>
+    {% endfor %}
+    <!--END CARTES STAGES-->
+{% endblock %}
